@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>HTML Table Practice</title>
+    
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid rgba(36, 207, 30, 0.979);
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eb7e7e;
+        }
+        tr:nth-child(even) {
+            background-color: #d1d1e4;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Table Practice</h1>
+
+    <h2>1. Basic HTML Table</h2>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+    </table>
+
+    <h2>2. Table with Column Span (colspan)</h2>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th colspan="2">Header 2 & 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+    </table>
+
+    <h2>3. Table with Row Span (rowspan)</h2>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Row 1 & 2, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 2</td>
+        </tr>
+    </table>
+
+    <h2>4. Table with Nested Table</h2>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>
+                <table border="1" >
+                    <tr>
+                        <td>Nested Cell 1</td>
+                        <td>Nested Cell 2</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+    </table>
+
+    <h2>5. Table with Borders, Padding, and Text Alignment</h2>
+    <table cellpadding="10" cellspacing="0">
+        <tr>
+            <th align="center">Header 1</th>
+            <th align="center">Header 2</th>
+        </tr>
+        <tr>
+            <td align="left">Row 1, Cell 1</td>
+            <td align="right">Row 1, Cell 2</td>
+        </tr>
+        <tr>
+            <td align="center">Row 2, Cell 1</td>
+            <td align="center">Row 2, Cell 2</td>
+        </tr>
+    </table>
+
+    <h2>6. Table with a Caption</h2>
+    <table border="1">
+        <caption>Sample Table with a Caption</caption>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+    </table>
+
+    <h2>7. Table with CSS Styling</h2>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+        </tr>
+    </table>
+
+    <h2>8. Table with Alternate Row Colors</h2>
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+        </tr>
+    </table>
+
+</body>
+</html>
